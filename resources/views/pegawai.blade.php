@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Ansonika">
-    <title>TomatPro</title>
+    <title>ReimSmart</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="{{ asset('faviconLogo.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('login/images/reim.png') }}" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
@@ -42,8 +42,8 @@
 <body class="fixed-nav sticky-footer" id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
-        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('login/images/reim.png') }}"
-                alt="" width="40" height="37"></a>
+        <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('login/images/reim.png') }}" alt="" width="40"
+                height="37"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -66,11 +66,18 @@
                         <span class="nav-link-text">Dashboard</span>
                     </a>
                 </li>
-
+                
                 <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Pegawai">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="{{ route('pegawai') }}">
                         <i class="fa fa-fw fa-user"></i>
                         <span class="nav-link-text"> Pegawai </span>
+                    </a>
+                </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Pegawai">
+                    <a class="nav-link" href="{{ route('reimData') }}">
+                        <i class="fa fa-fw fa-file-text"></i>
+                        <span class="nav-link-text"> Reimbursement </span>
                     </a>
                 </li>
             </ul>

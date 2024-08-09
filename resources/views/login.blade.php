@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Login V12</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <title>ReimSmart</title>
+    <link rel="shortcut icon" href="{{ asset('login/images/reim.png') }}" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('login/vendor/bootstrap/css/bootstrap.min.css') }}">
 
@@ -32,7 +32,7 @@
                 <form class="login100-form validate-form" action="{{ route('storeLogin') }}" method="POST">
                     @csrf
                     <div class="login100-form-avatar">
-                        <img src="{{ asset('login/images/reim.png') }}" alt="logo" width="100px" height="140px"> 
+                        <img src="{{ asset('login/images/reim.png') }}" alt="logo" width="100px" height="180px"> 
 					</div>
 
                     @if (session('gagal'))

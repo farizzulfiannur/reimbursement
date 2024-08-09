@@ -71,6 +71,13 @@
                         <span class="nav-link-text"> Pegawai </span>
                     </a>
                 </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Pegawai">
+                    <a class="nav-link" href="{{ route('reimData') }}">
+                        <i class="fa fa-fw fa-file-text"></i>
+                        <span class="nav-link-text"> Reimbursement </span>
+                    </a>
+                </li>
             </ul>
             <ul class="navbar-nav sidenav-toggler">
                 <li class="nav-item">
@@ -122,13 +129,13 @@
                         <div class="card dashboard text-white bg-success o-hidden h-100">
                             <div class="card-body">
                                 <div class="card-body-icon">
-                                    <i class="fa fa-fw fa-calendar-check-o"></i>
+                                    <i class="fa fa-fw fa-file-text"></i>
                                 </div>
                                 <div class="mr-5">
-                                    <h5> Reimbursement </h5>
+                                    <h5> {{ $total_reim }} Reimbursement </h5>
                                 </div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="">
+                            <a class="card-footer text-white clearfix small z-1" href="{{ route('reimData') }}">
                                 <span class="float-left">View Details</span>
                                 <span class="float-right">
                                     <i class="fa fa-angle-right"></i>
