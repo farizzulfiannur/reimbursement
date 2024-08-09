@@ -1,0 +1,32 @@
+.role-regist {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    /* line-height: 1.2; */
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 53px;
+}
+
+.form-input-gambar {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    /* line-height: 1.2; */
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 53px;
+    padding-top: 13px;
+}
+
+.roleku {
+    color: #333;
+    height: 100%;
+    width: 95%;
+    border: none;
+    border-radius: 20px;
+}

@@ -1,0 +1,136 @@
+.content-wrapper .container-fluid .greeting h1{
+    margin-top: 80px;
+    margin-left: 80px;
+    color: #fff !important;
+}
+.content-wrapper .container-fluid .greeting p{
+    /* margin-top: 80px; */
+    margin-left: 80px;
+    /* padding-right: 400px; */
+    color: #fff !important;
+    text-align: justify;
+}
+.content-wrapper .container-fluid .saved p{
+    /* margin-top: 80px; */
+    margin-left: 0px;
+    /* padding-right: 400px; */
+    color: #fff !important;
+    text-align: justify;
+}
+.content-wrapper .container-fluid .saved{
+    /* margin-top: 80px; */
+    margin-left: 100px;
+    /* padding-right: 400px; */
+    color: #fff !important;
+    text-align: justify;
+}
+
+.profile{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.namaprofile{
+    color: white !important;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.editprofile{
+    color: #e1e1e1e3 !important;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.editprofile .btn-light{
+    font-size: 14px;
+}
+
+.titleRole {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.back_box_custom2{
+    display: flex;
+    justify-content: end;
+    color: #ca0d0d;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    margin-right: 5px;
+}
+
+.back_box_custom2:hover{
+    color: #ef2626;
+}
+
+.square{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.body-square{
+    border-radius: 15px;
+}
+
+/* Add this CSS to style the scrollbar */
+.navbar-sidenav {
+    overflow-y: auto;
+    max-height: auto;
+}
+
+/* Customize the scrollbar color */
+.navbar-sidenav::-webkit-scrollbar {
+    width: 0px;
+}
+
+.navbar-sidenav::-webkit-scrollbar-track {
+    background-color: #f5f5f5; /* Set the background color of the scrollbar track */
+}
+
+.navbar-sidenav::-webkit-scrollbar-thumb {
+    background-color: #808080; /* Set the color of the scrollbar thumb/handle */
+    border-radius: 10px; /* Optional: Add rounded corners to the scrollbar thumb */
+}
+
+
+.box_general {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.btn-tomato {
+    background: #ff745b  !important;
+    border-color: #ff745b;
+    color: #fff;
+}
+
+.btn-tomato:hover {
+    background: #fd583b  !important;
+    border-color: #fd583b;
+    color: #fff;
+}
+
+.btn-tomato.focus,
+.btn-primary:focus {
+    box-shadow: 0 0 0 3px #fd583b;
+}
+.btn-tomato.disabled,
+.btn-primary:disabled {
+    background-color: #fd583b;
+    border-color: #fd583b;
+}
+.btn-tomato.active,
+.btn-tomato:active,
+.show > .btn-tomato.dropdown-toggle {
+    background-color: #fd583b;
+    background-image: none;
+    border-color: #fd583b;
+}

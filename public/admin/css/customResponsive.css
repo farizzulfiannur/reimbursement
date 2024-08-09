@@ -1,0 +1,62 @@
+/* Untuk Tablet */
+/* Tambahkan breakpoint max-width: 1000px */
+@media (max-width: 1000px){
+    .item {
+      width: 50%;
+    }
+  }
+  
+  
+  /* Untuk Smartphone */
+  /* Tambahkan breakpoint max-width: 670px */
+  @media (max-width: 670px){
+
+    /* Dashboard */
+    .box_general {
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+
+    /* Symptom */
+
+    #myTable{
+      width: 10px;
+    }
+
+    .card-header h2 {
+      font-size: 18px;
+    }
+
+    .add-symptom {
+      font-size: 12px;
+    }
+    .edit-symptom {
+      font-size: 11px;
+    }
+    .delete-symptom {
+      font-size: 11px;
+    }
+
+    .table-container {
+      font-size: 10px;
+    }
+
+    .add-pegawai {
+      font-size: 12px;
+    }
+    .edit-pegawai {
+      font-size: 11px;
+    }
+    .delete-pegawai {
+      font-size: 11px;
+    }
+
+    .identification-result-text{
+      font-size: 23px !important;
+    }
+
+    .pagination {
+      font-size: 10px;
+    }
+  }
+  

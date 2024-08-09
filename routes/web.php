@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +16,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[LoginController::class,'home'])->name('home');
+Route::get('/',[LoginController::class,'login'])->name('login');
+Route::post('/storeLogin',[LoginController::class,'storeLogin'])->name('storeLogin');
+Route::get('/logout',[LoginController::class,'logout'])->name('logout');
+
+
+Route::get('/dashboard',[HomeController::class,'home'])->name('home')->middleware('auth');
+
+Route::get('/pegawai',[PegawaiController::class,'pegawai'])->name('pegawai')->middleware('auth');
+Route::post('/pegawai/addPegawai', [PegawaiController::class, 'addPegawai'])->name('addPegawai')->middleware('auth');
+Route::put('/pegawai/edit/{id}', [PegawaiController::class, 'updatePegawai'])->name('updatePegawai')->middleware('auth');
+Route::get('/pegawai/delete/{id}', [PegawaiController::class, 'deletePegawai'])->name('deletePegawai')->middleware('auth');
